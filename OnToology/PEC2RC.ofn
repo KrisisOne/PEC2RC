@@ -1,0 +1,302 @@
+Prefix(:=<urn:absolute:ontology/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology>
+
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Aircraft>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Author>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Business>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CabinStaffService>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Comment>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CommentTitle>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Country>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#DateFlown>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Flight>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#FoodAndBeverages>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#GroundService>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#InflightEntertainment>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#MaxRating>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Origin>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerCountry>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerType>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatConfort>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatRating>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatType>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Service>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Tourist>))
+Declaration(Class(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#WifiConnectivity>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#destinationCountry>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasDestination>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasFlightCount>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasRating>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasSeatRating>))
+Declaration(DataProperty(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#averageRating>))
+Declaration(DataProperty(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#flightCount>))
+Declaration(DataProperty(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#ticketPrice>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger320>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Rome>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat320>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Spain>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#19/04/2024>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#4g>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#5g>))
+Declaration(AnnotationProperty(rdfs:sameAs))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#destinationCountry> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#destinationCountry>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#destinationCountry> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#destinationCountry> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination>)
+
+# Object Property: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasDestination> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasDestination>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasDestination> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasDestination> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger>)
+ObjectPropertyRange(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasDestination> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination>)
+
+# Object Property: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasFlightCount> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasFlightCount>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasFlightCount> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasFlightCount> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger>)
+ObjectPropertyRange(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasFlightCount> DataSomeValuesFrom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#flightCount> xsd:integer))
+
+# Object Property: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasRating> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasRating>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasRating> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasRating> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>)
+ObjectPropertyRange(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasRating> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#MaxRating>)
+
+# Object Property: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasSeatRating> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasSeatRating>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasSeatRating> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasSeatRating> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>)
+ObjectPropertyRange(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasSeatRating> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#averageRating> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#averageRating>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#averageRating> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#averageRating> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Service>)
+DataPropertyRange(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#averageRating> xsd:decimal)
+
+# Data Property: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#flightCount> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#flightCount>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#flightCount> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#flightCount> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Flight>)
+DataPropertyRange(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#flightCount> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#ticketPrice> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#ticketPrice>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#ticketPrice> owl:topDataProperty)
+DataPropertyDomain(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#ticketPrice> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>)
+DataPropertyRange(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#ticketPrice> xsd:decimal)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Aircraft> (Aircraft)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Aircraft> "Information about the route or aircraft where the plane will fly")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Aircraft> "Aircraft")
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Author> (Author)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Author> "Name of the passenger who rated the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Author> "Author")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Author> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Business> (Business)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Business> "Business Type passenger")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Business> "Business")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Business> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerType>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CabinStaffService> (Cabin Staff Service)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CabinStaffService> "Information about the cabin staff service")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CabinStaffService> "Cabin Staff Service")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CabinStaffService> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Service>)
+DisjointClasses(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CabinStaffService> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#GroundService>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Comment> (Comment)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Comment> "Body of the message that the reviewer wrote")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Comment> "Comment")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Comment> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CommentTitle> (Comment Title)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CommentTitle> "Title of the review")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CommentTitle> "Comment Title")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#CommentTitle> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#DateFlown> (Date Flown)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#DateFlown> "Information about the date of flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#DateFlown> "Date Flown")
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination> (Destination)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination> "Information about the destination of the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination> "Destination")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Country>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Flight> (Flight)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Flight> "Information of the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Flight> "Flight")
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#FoodAndBeverages> (Food And Beverages)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#FoodAndBeverages> "Information about the quality of the food and beverages during the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#FoodAndBeverages> "Food And Beverages")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#FoodAndBeverages> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Service>)
+DisjointClasses(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#FoodAndBeverages> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#InflightEntertainment>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#GroundService> (Ground Service)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#GroundService> "Information about the quality of the service when the passenger arrives to the destination")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#GroundService> "Ground Service")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#GroundService> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Service>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#InflightEntertainment> (Inflight Entertainment)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#InflightEntertainment> "Information about the quality and availability of the entertainment during the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#InflightEntertainment> "Inflight Entertainment")
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#MaxRating> (Max Rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#MaxRating> "Maximum rating from the passenger")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#MaxRating> "Max Rating")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#MaxRating> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Origin> (Origin)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Origin> "Information about the origin from where the passenger take the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Origin> "Origin")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Origin> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Country>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger> (Passenger)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger> "Information about the passenger")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger> "Passenger")
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerCountry> (Passenger Country)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerCountry> "Information about the country of the passenger")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerCountry> "Passenger Country")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerCountry> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerType> (Passenger Type)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerType> "Information about the type of passenger")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerType> "Passenger Type")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerType> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review> (Review)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review> "General information about the review")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review> "Review")
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat> (Seat)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat> "information about the seat taken by the passenger")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat> "Seat")
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatConfort> (Seat Confort)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatConfort> "Information about the quality and confort of the seat")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatConfort> "Seat Confort")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatConfort> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatRating> (Seat Rating)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatRating> "Rating of the selected seat")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatRating> "Seat Rating")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatRating> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Review>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatType> (Seat Type)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatType> "Information about the type of seat taken by the passenger")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatType> "Seat Type")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#SeatType> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Service> (Service)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Service> "General information about the given service during the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Service> "Service")
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Tourist> (Tourist)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Tourist> "Passenger type: Tourist")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Tourist> "Tourist")
+SubClassOf(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Tourist> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#PassengerType>)
+
+# Class: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#WifiConnectivity> (Wifi Connectivity)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#WifiConnectivity> "information about the connectivity and the WiFi quality during the flight")
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#WifiConnectivity> "Wifi Connectivity")
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger320> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger320>)
+
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger320>)
+DataPropertyAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#flightCount> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger320> "15"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Rome> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Rome>)
+
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Rome> "https://dbpedia.org/page/Rome")
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Rome>)
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Origin> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Rome>)
+
+# Individual: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat320> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat320>)
+
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat320>)
+
+# Individual: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Spain> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Spain>)
+
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Spain> "https://dbpedia.org/page/Spain")
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Destination> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Spain>)
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Origin> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Spain>)
+
+# Individual: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#19/04/2024> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#19/04/2024>)
+
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#DateFlown> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#19/04/2024>)
+
+# Individual: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#4g> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#4g>)
+
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#WifiConnectivity> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#4g>)
+
+# Individual: <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#5g> (<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#5g>)
+
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#5g> "https://dbpedia.org/page/5G")
+ClassAssertion(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#WifiConnectivity> <http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#5g>)
+
+
+DLSafeRule(Body(ClassAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger> Variable(<urn:swrl:var#passenger>)) ObjectPropertyAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasFlightCount> Variable(<urn:swrl:var#passenger>) Variable(<urn:swrl:var#count>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThan> Variable(<urn:swrl:var#count>) "20"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Business> Variable(<urn:swrl:var#passenger>))))
+DLSafeRule(Body(ClassAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Passenger> Variable(<urn:swrl:var#passenger>)) ObjectPropertyAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasFlightCount> Variable(<urn:swrl:var#passenger>) Variable(<urn:swrl:var#count>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#lessThan> Variable(<urn:swrl:var#count>) "20"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Tourist> Variable(<urn:swrl:var#passenger>))))
+DLSafeRule(Body(ClassAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#Seat> Variable(<urn:swrl:var#seat>)) ObjectPropertyAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasSeatRating> Variable(<urn:swrl:var#seat>) Variable(<urn:swrl:var#r>)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#equal> Variable(<urn:swrl:var#r>) "5"^^xsd:integer))Head(ObjectPropertyAtom(<http://www.semanticweb.org/krisi/ontologies/2024/3/ontology#hasSeatRating> Variable(<urn:swrl:var#seat>) Variable(<urn:swrl:var#r>))))
+)
